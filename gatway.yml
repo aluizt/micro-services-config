@@ -18,11 +18,11 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: product-catalog
+        - id: catalogo-service
           uri: lb://CATALOGO-SERVICE
           predicates:
             - Path=/catalogo/**
-        - id: shopping-cart
-          uri: lb://SHOPPING-CART
+        - id: shopping-cart-service
+          uri: lb://SHOPPING-CART-SERVICE
           predicates:
             - Path=/cart/**
