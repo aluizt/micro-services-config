@@ -17,3 +17,12 @@ eureka:
 management:
    security:
       enabled: false
+      
+datasource:
+      password: MySql2020!
+      url: jdbc:mysql://${root:localhost}:3306/testedb
+      username: root
+  jpa:
+      hibernate:
+          ddl-auto: update
+      
