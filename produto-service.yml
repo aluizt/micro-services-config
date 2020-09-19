@@ -19,10 +19,14 @@ management:
       enabled: false
       
 datasource:
-      password: MySql2020!
-      url: jdbc:mysql://localhost:3306/testedb
-      username: root
-  jpa:
-      hibernate:
-          ddl-auto: update
+    password: MySql2020!
+    url: jdbc:mysql://localhost:3306/testedb
+    username: root
+jpa:
+    hibernate:
+        ddl-auto: update
+    properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
       
