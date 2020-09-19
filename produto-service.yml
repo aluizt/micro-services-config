@@ -20,7 +20,7 @@ management:
       
 datasource:
       password: MySql2020!
-      url: jdbc:mysql://${root:localhost}:3306/testedb
+      url: jdbc:mysql://localhost:3306/testedb
       username: root
   jpa:
       hibernate:
